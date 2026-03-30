@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 import AllProducts from "./AllProducts";
 import Cart from "./Cart";
 
-const ProductsSection = ({productPromise}) => {
+const ProductsSection = ({productPromise, cart, setCart}) => {
     const productsData = use(productPromise);
     const [activeToggleBtn, setActiveToggleBtn] = useState('products');
 
@@ -18,13 +18,18 @@ const ProductsSection = ({productPromise}) => {
                 {/* Toggle Button */}
                 <div className="tabs tabs-box justify-center bg-transparent">
                     <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Products" defaultChecked onClick={()=>{setActiveToggleBtn('products')}} />
-                    <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Cart ()" onClick={()=>{setActiveToggleBtn('cart')}} />
+                    <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label={`Cart (${cart.length})`} onClick={()=>{setActiveToggleBtn('cart')}} />
                 </div>
             </div>
 
             {activeToggleBtn === 'products' ? <AllProducts 
             productsData={productsData}
-            ></AllProducts> : <Cart></Cart>}
+            cart={cart}
+            setCart={setCart}
+            ></AllProducts> : <Cart
+            cart={cart}
+            setCart={setCart}
+            ></Cart>}
         </section>
      );
 }

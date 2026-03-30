@@ -27,6 +27,8 @@ function App() {
       {/* dynamic part start */}
       <ProductsSection 
       productPromise={productPromise}
+      cart={cart}
+      setCart={setCart}
       ></ProductsSection>
 
       {/* dynamic part end */}

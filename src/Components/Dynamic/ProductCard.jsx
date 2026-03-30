@@ -1,11 +1,22 @@
 import { useState } from "react";
 import { IoCheckmark } from "react-icons/io5";
+import { toast } from "react-toastify";
 
-const ProductCard = ({product}) => {
+const ProductCard = ({product, cart, setCart}) => {
     const [isBought, setIsBought] = useState(false);
     const handleBuyBtn=()=>{
         // setIsBought(prev=> !prev);
         setIsBought(true);
+        const foundProduct = cart.find(item=> item.id === product.id);
+        if(foundProduct){
+            toast.error('Product is Already in Cart');
+            return
+        }
+        setCart([
+            ...cart,
+            product
+        ])
+        toast.success('Product Added to Cart')
     }
 
     return ( 
