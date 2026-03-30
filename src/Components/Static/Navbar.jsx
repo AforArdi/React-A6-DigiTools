@@ -1,6 +1,6 @@
 import { MdOutlineShoppingCart } from "react-icons/md";
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
     return ( 
         <section className=" sticky top-0 z-10">
             <div className="navbar bg-base-100">
@@ -18,7 +18,8 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end flex items-center gap-1">
                     <a className="btn btn-ghost">
-                        <MdOutlineShoppingCart></MdOutlineShoppingCart>
+                        <MdOutlineShoppingCart size={25}></MdOutlineShoppingCart>
+                        {cart.length > 0 && <div className="badge badge-sm badge-info rounded-full">{cart.length}</div>}
                     </a>
                     <a className="btn btn-ghost">Login</a>
                     <a className="btn btn-primary rounded-4xl">Get Started</a>

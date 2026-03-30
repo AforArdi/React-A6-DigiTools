@@ -7,7 +7,7 @@ const Cart = ({cart, setCart}) => {
     const handleRemoveBtn=(product)=>{
         const filteredItemArray = cart.filter(item=> item.id !== product.id);
         setCart(filteredItemArray);
-        toast('Product Removed from Cart!')
+        toast.success('Product Removed from Cart!')
     }
 
     const handlePayNowBtn=()=>{

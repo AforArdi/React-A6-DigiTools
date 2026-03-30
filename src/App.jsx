@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar cart={cart}></Navbar>
       <Hero></Hero>
       <Stat></Stat>
 
