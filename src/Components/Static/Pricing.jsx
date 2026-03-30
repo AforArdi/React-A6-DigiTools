@@ -23,19 +23,19 @@ const Pricing = () => {
                         <ul className="mt-6 flex flex-col gap-2 text-xs">
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Access to 10 free tools</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Basic templates</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Community support</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>1 project per month</span>
                             </li>
                         
                         </ul>
@@ -57,27 +57,27 @@ const Pricing = () => {
                         <ul className="mt-6 flex flex-col gap-2 text-xs">
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Access to all premium tools</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Unlimited templates</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Priority support</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Unlimited projects</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Cloud sync</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Advanced analytics</span>
                             </li>
                         
                         </ul>
@@ -99,27 +99,27 @@ const Pricing = () => {
                         <ul className="mt-6 flex flex-col gap-2 text-xs">
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Everything in Pro</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Team collaboration</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Custom integrations</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Dedicated support</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>SLA guarantee</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IoCheckmark></IoCheckmark>
-                                <span>High-resolution image generation</span>
+                                <span>Custom branding</span>
                             </li>
                         
                         </ul>
