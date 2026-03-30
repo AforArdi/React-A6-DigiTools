@@ -18,8 +18,8 @@ const Hero = () => {
                             Access premium AI tools, design assets, templates, and productivity <br /> software—all in one place. Start creating faster today. <br /> Explore Products
                         </p>
                         <div className='flex items-center gap-3'>
-                            <button className="btn btn-primary rounded-3xl">Get Started</button>
-                            <button className='btn btn-outline rounded-3xl'>
+                            <button className="btn btn-primary rounded-3xl">Explore Products</button>
+                            <button className='btn btn-outline btn-primary rounded-3xl'>
                                 <CiPlay1></CiPlay1> Watch Demo
                             </button>
                         </div>

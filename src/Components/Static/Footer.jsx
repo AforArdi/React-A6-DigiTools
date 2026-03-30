@@ -35,13 +35,13 @@ const Footer = () => {
                 <nav>
                     <h6 className="footer-title">Social Links</h6>
                     <div className="flex items-center gap-2">
-                        <a className="link link-hover bg-white w-6 h-6 p-1 rounded-full flex items-center justify-center">
+                        <a href="https://www.instagram.com/0mohammadardi0" target="_blank" className="link link-hover bg-white w-6 h-6 p-1 rounded-full flex items-center justify-center">
                             <AiFillInstagram color="black"></AiFillInstagram>
                         </a>
-                        <a className="link link-hover bg-white w-6 h-6 p-1 rounded-full flex items-center justify-center">
+                        <a href="https://www.facebook.com/miftahulislamardi" target="_blank" className="link link-hover bg-white w-6 h-6 p-1 rounded-full flex items-center justify-center">
                             <FaFacebook color="black"></FaFacebook>
                         </a>
-                        <a className="link link-hover bg-white w-6 h-6 p-1 rounded-full flex items-center justify-center">
+                        <a href="https://x.com/AforArdi" target="_blank" className="link link-hover bg-white w-6 h-6 p-1 rounded-full flex items-center justify-center">
                             <RiTwitterXFill color="black"></RiTwitterXFill>
                         </a>
                     </div>

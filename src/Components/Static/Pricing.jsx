@@ -4,7 +4,7 @@ const Pricing = () => {
     return ( 
         <section className="className='my-10 flex flex-col max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-22'">
 
-            <div className='flex flex-col gap-1 text-center mb-5'>
+            <div className='space-y-5 text-center mb-5'>
                 <h2 className='font-bold text-5xl'>Simple, Transparent Pricing</h2>
                 <p className='text-[16px] text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime..</p>
             </div>
@@ -48,7 +48,7 @@ const Pricing = () => {
                 {/* pro */}
                 <div className="card w-82 bg-base-100 shadow-sm bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">
                     <div className="card-body">
-                        <span className="badge badge-xs badge-warning">Most Popular</span>
+                        <span className="badge badge-sm badge-warning">Most Popular</span>
                         <div className="flex flex-col space-y-2">
                             <h2 className="text-3xl font-bold">Pro</h2>
                             <p>Perfect for getting started</p>

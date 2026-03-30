@@ -37,6 +37,9 @@ const ProductCard = ({product, cart, setCart}) => {
                     {/* trying */}
                     <span className={`badge badge-xs ${badgeColors[product.tag]}`}>{product.tag}</span>
                     <div className="flex flex-col space-y-2">
+                        <div className="bg-white p-2 h-15 w-15 rounded-full">
+                            <img src={product.icon} alt={product.name} />
+                        </div>
                         <h2 className="text-3xl font-bold">{product.name}</h2>
                         <p className="text-[#627382]">{product.description}</p>
                         <span className="text-xl font-bold">${product.price}/mo</span>

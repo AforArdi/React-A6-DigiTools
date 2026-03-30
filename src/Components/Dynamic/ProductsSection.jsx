@@ -10,8 +10,8 @@ const ProductsSection = ({productPromise, cart, setCart}) => {
     return ( 
         <section>
             {/* fixed */}
-            <div className="space-y-4">
-                <div className="text-center">
+            <div className="space-y-6">
+                <div className="text-center  space-y-6">
                     <h2 className='font-bold text-5xl'>Premium Digital Tools</h2>
                     <p className='text-[16px] text-[#627382]'>Choose from our curated collection of premium digital products designed <br />to boost your productivity and creativity.</p>
                 </div>
