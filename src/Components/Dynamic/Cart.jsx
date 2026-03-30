@@ -1,4 +1,6 @@
 import { toast } from "react-toastify";
+import CartCard from "./CartCard";
+import { FaOpencart } from "react-icons/fa";
 
 const Cart = ({cart, setCart}) => {
     const totalPrice = cart.reduce((sum, item)=> sum + item.price, 0)
@@ -19,30 +21,18 @@ const Cart = ({cart, setCart}) => {
                 <h2 className="text-3xl font-bold text-center">Your Cart</h2>
             </div>
 
-            <div className="p-4 flex flex-col gap-3">
-                {
-                    cart.map(product=>{
-                        return (
-                            <div className="flex justify-between items-center bg-[#6273821e] p-4 rounded-lg">
-                                <div className="flex items-center gap-3">
-                                    <div className="bg-white p-2 h-10 w-10 rounded-full">
-                                        <img src={product.icon} alt={product.name} />
-                                    </div>
-                                    <div>
-                                        <h2 className="card-title font-semibold text-[20px]">{product.name}</h2>
-                                        <p>${product.price}</p>
-                                    </div>
-                                </div>
-                                <button onClick={()=>{handleRemoveBtn(product)}} className="btn btn-primary rounded-full">Remove</button>
-                            </div>
-                        )
-                    })
-                }
+            {cart.length === 0 ? 
+            <div className="flex flex-col items-center gap-2 p-20">
+                <FaOpencart size={50}></FaOpencart>
+                <p>Cart's Empty</p>
             </div>
-            <div className="p-4 flex flex-col gap-4">
-                <h2 className="font-bold text-2xl text-right">Total: ${totalPrice}</h2>
-                <button onClick={handlePayNowBtn} className="btn btn-primary rounded-full">Pay Now</button>
-            </div>
+
+            : <CartCard
+            totalPrice={totalPrice}
+            handleRemoveBtn={handleRemoveBtn}
+            handlePayNowBtn={handlePayNowBtn}
+            cart={cart}
+            ></CartCard>}
         </section>
      );
 }
