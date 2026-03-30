@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import ProductsSection from './Components/Dynamic/ProductsSection'
 import Footer from './Components/Static/Footer'
@@ -15,15 +16,18 @@ const getProduct= async ()=>{
 const productPromise = getProduct();
 
 function App() {
+  const [cart, setCart] = useState([]);
 
   return (
     <>
       <Navbar></Navbar>
       <Hero></Hero>
       <Stat></Stat>
-      {/* dynamic part start */}
-      <ProductsSection productPromise={productPromise}></ProductsSection>
 
+      {/* dynamic part start */}
+      <ProductsSection 
+      productPromise={productPromise}
+      ></ProductsSection>
 
       {/* dynamic part end */}
       <ThreeSteps></ThreeSteps>

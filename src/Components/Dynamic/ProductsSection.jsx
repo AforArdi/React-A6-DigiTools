@@ -1,11 +1,15 @@
-import { use } from "react";
+import { use, useState } from "react";
 import ProductCard from "./ProductCard";
+import AllProducts from "./AllProducts";
+import Cart from "./Cart";
 
 const ProductsSection = ({productPromise}) => {
     const productsData = use(productPromise);
+    const [activeToggleBtn, setActiveToggleBtn] = useState('products');
 
     return ( 
         <section>
+            {/* fixed */}
             <div className="space-y-4">
                 <div className="text-center">
                     <h2 className='font-bold text-5xl'>Premium Digital Tools</h2>
@@ -13,23 +17,14 @@ const ProductsSection = ({productPromise}) => {
                 </div>
                 {/* Toggle Button */}
                 <div className="tabs tabs-box justify-center bg-transparent">
-                    <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Products" defaultChecked />
-                    <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Cart ()" />
+                    <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Products" defaultChecked onClick={()=>{setActiveToggleBtn('products')}} />
+                    <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Cart ()" onClick={()=>{setActiveToggleBtn('cart')}} />
                 </div>
             </div>
-            
-            <div className="grid  md:grid-cols-2  lg:grid-cols-3 gap-5 mt-10">
-                {
-                    productsData.map((product)=> {
-                        return (
-                            <ProductCard
-                            key={product.id}
-                            product={product}
-                            ></ProductCard>
-                        )
-                    })
-                }
-            </div>
+
+            {activeToggleBtn === 'products' ? <AllProducts 
+            productsData={productsData}
+            ></AllProducts> : <Cart></Cart>}
         </section>
      );
 }
