@@ -35,14 +35,14 @@ const ProductCard = ({product, cart, setCart}) => {
                     {/* <span className="badge badge-xs badge-warning">{product.tag}</span> */}
 
                     {/* trying */}
-                    <span className={`badge badge-xs ${badgeColors[product.tag]}`}>{product.tag}</span>
+                    <span className={`badge badge-sm ${badgeColors[product.tag]}`}>{product.tag}</span>
                     <div className="flex flex-col space-y-2">
                         <div className="bg-white p-2 h-15 w-15 rounded-full">
                             <img src={product.icon} alt={product.name} />
                         </div>
                         <h2 className="text-3xl font-bold">{product.name}</h2>
                         <p className="text-[#627382]">{product.description}</p>
-                        <span className="text-xl font-bold">${product.price}/mo</span>
+                        <span className="text-xl font-bold">${product.price}/{product.period}</span>
                     </div>
 
                     <ul className="mt-6 flex flex-col gap-2 text-xs">

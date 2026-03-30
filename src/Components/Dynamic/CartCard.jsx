@@ -16,7 +16,7 @@ const CartCard = ({cart, totalPrice, handleRemoveBtn, handlePayNowBtn}) => {
                                         <p>${product.price}</p>
                                     </div>
                                 </div>
-                                <button onClick={()=>{handleRemoveBtn(product)}} className="btn btn-primary rounded-full">Remove</button>
+                                <button onClick={()=>{handleRemoveBtn(product)}} className="btn btn-outline btn-warning rounded-full">Remove</button>
                             </div>
                         )
                     })
