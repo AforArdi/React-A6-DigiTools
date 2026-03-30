@@ -11,7 +11,7 @@ const ThreeSteps = () => {
                 <p className='text-[16px] text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
             </div>
 
-            <div className='flex justify-between'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-4'>
 
                 <div className="card bg-base-100 w-96 shadow-sm">
                     <div className='w-full flex justify-end pt-5 pr-5'>

@@ -10,7 +10,7 @@ const Pricing = () => {
             </div>
 
             {/* cards parent */}
-            <div className="flex items-stretch justify-center gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-4">
                 {/* starter */}
                 <div className="card w-82 bg-base-100 shadow-sm">
                     <div className="card-body">
