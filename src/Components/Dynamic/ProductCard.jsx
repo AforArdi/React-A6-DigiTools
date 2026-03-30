@@ -1,6 +1,13 @@
+import { useState } from "react";
 import { IoCheckmark } from "react-icons/io5";
 
 const ProductCard = ({product}) => {
+    const [isBought, setIsBought] = useState(false);
+    const handleBuyBtn=()=>{
+        // setIsBought(prev=> !prev);
+        setIsBought(true);
+    }
+
     return ( 
         <section>
             <div className="card bg-base-100 shadow-sm">
@@ -23,7 +30,9 @@ const ProductCard = ({product}) => {
                         }
                     </ul>
                     <div className="mt-6">
-                    <button className="btn btn-primary btn-block rounded-full">Subscribe</button>
+                    <button onClick={handleBuyBtn} className={`btn btn-primary btn-block rounded-full ${isBought && 'bg-green-800 text-white'}`}>
+                        {isBought ? 'Added to Cart' : 'Buy Now'}
+                    </button>
                     </div>
                 </div>
             </div>
