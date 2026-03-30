@@ -48,7 +48,7 @@ To run this project locally, follow these steps:
     ```
 2.  **Navigate to the project directory:**
     ```bash
-    cd digitools
+    cd React-A6-DigiTools
     ```
 3.  **Install dependencies:**
     ```bash
