@@ -19,11 +19,23 @@ const ProductCard = ({product, cart, setCart}) => {
         toast.success('Product Added to Cart')
     }
 
+    // showing different badge based on it's type
+    // took help
+    const badgeColors = {
+    "Best Seller": "badge-warning",
+    "Popular": "badge-primary", // or badge-secondary depending on your DaisyUI theme
+    "New": "badge-success"
+    };
+
     return ( 
         <section>
             <div className="card bg-base-100 shadow-sm">
                 <div className="card-body">
-                    <span className="badge badge-xs badge-warning">{product.tag}</span>
+                    {/* simple one */}
+                    {/* <span className="badge badge-xs badge-warning">{product.tag}</span> */}
+
+                    {/* trying */}
+                    <span className={`badge badge-xs ${badgeColors[product.tag]}`}>{product.tag}</span>
                     <div className="flex flex-col space-y-2">
                         <h2 className="text-3xl font-bold">{product.name}</h2>
                         <p className="text-[#627382]">{product.description}</p>
