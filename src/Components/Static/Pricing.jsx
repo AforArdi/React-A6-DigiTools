@@ -16,9 +16,9 @@ const Pricing = () => {
                     <div className="card-body">
                         {/* <span className="badge badge-xs badge-warning">Most Popular</span> */}
                         <div className="flex flex-col space-y-2">
-                        <h2 className="text-3xl font-bold">Starter</h2>
-                        <p className="text-[#627382]">Perfect for getting started</p>
-                        <span className="text-xl font-bold">$0/mo</span>
+                            <h2 className="text-3xl font-bold">Starter</h2>
+                            <p className="text-[#627382]">Perfect for getting started</p>
+                            <span className="text-xl font-bold">$0/mo</span>
                         </div>
                         <ul className="mt-6 flex flex-col gap-2 text-xs">
                             <li className="flex items-center gap-2">
