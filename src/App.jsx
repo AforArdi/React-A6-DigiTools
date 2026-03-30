@@ -4,6 +4,7 @@ import Navbar from './Components/Static/Navbar'
 import Pricing from './Components/Static/Pricing'
 import Stat from './Components/Static/Stat'
 import ThreeSteps from './Components/Static/ThreeSteps'
+import WorkFlow from './Components/Static/WorkFlow'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 
       <ThreeSteps></ThreeSteps>
       <Pricing></Pricing>
+      <WorkFlow></WorkFlow>
     </>
   )
 }
