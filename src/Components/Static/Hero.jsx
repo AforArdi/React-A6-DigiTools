@@ -1,5 +1,5 @@
 import { CiPlay1 } from 'react-icons/ci';
-import banner from '../assets/Banner.png'
+import banner from '../../assets/Banner.png'
 import { FaCircleDot } from 'react-icons/fa6';
 
 const Hero = () => {

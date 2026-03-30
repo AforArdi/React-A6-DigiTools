@@ -2,7 +2,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 
 const Navbar = () => {
     return ( 
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-0 z-10">
+        <section className=" sticky top-0 z-10">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <a className="btn btn-ghost font-extrabold text-3xl text-[#4F39F6]">DigiTools</a>
